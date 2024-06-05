@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Club Ride</title>
+    <link rel="stylesheet" href="AddRide.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>OU Cycle Club - Add Club Ride</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Events</a>
+                    <div class="dropdown-content">
+                        <a href="rides.html">Ride Events</a>
+                        <a href="events.html">Social Events</a>
+                    </div>
+                </li>
+                <li><a href="members.html">Membership</a></li>
+                <li><a href="news.html">News Items</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Add Club Ride</h2>
+            <form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
+                <fieldset>
+                    <legend>Ride Details</legend>
+                    <div class="form-group">
+                        <label for="ride_title">Ride Title:</label>
+                        <input type="text" id="ride_title" name="ride_title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ride_date">Ride Date:</label>
+                        <input type="date" id="ride_date" name="ride_date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="start_time">Start Time:</label>
+                        <input type="time" id="start_time" name="start_time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="end_time">End Time:</label>
+                        <input type="time" id="end_time" name="end_time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ride_description">Description:</label>
+                        <textarea id="ride_description" name="ride_description" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="ride_leader">Ride Leader:</label>
+                        <input type="text" id="ride_leader" name="ride_leader" required>
+                    </div>
+                    <input type="hidden" name="SessionIdentifier" value="ff53-dd45-dcba9876-9090">
+                </fieldset>
+                <button type="submit">Add Ride</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
